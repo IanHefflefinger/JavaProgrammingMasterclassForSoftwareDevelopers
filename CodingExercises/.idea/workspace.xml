@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e724f029-577c-4f61-888f-097136c21f01" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/NumberToWords/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AllFactors/AllFactors.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AreaCalculator/AreaCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BarkingDog/BarkingDog.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DecimalComparator/DecimalComparator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EqualSumChecker/EqualSumChecker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EqualityPrinter/EqualityPrinter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EvenDigitSum/EvenDigitSum.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FirstAndLastDigitSum/FirstAndLastDigitSum.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GreatestCommonDivisor/GreatestCommonDivisor.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LastDigitChecker/LastDigitChecker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeapYearCalculator/LeapYearCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MegaBytesConverter/MegaBytesConverter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinutesToYearsAndDaysCalculator/MinutesToYearsAndDaysCalculator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberInWord/NumberInWord.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberOfDaysInMonth/NumberOfDaysInMonth.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberPalindrome/NumberPalindrome.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberToWords/NumberToWords.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberToWords/out/production/NumberToWords/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/NumberToWords/out/production/NumberToWords/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NumberToWords/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/NumberToWords/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PerfectNumber/PerfectNumber.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlayingCat/PlayingCat.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SharedDigit/SharedDigit.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpeedConverter/SpeedConverter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SumOdd/SumOdd.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeenNumberChecker/TeenNumberChecker.iml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1nQtrRFG7Lvqh3AjU1nn0dIwnKi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e724f029-577c-4f61-888f-097136c21f01" name="Default Changelist" comment="" />
+      <created>1611334340637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611334340637</updated>
+    </task>
+    <servers />
+  </component>
+</project>

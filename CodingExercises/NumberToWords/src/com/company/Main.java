@@ -1,126 +1,145 @@
 package com.company;
 
+// I don't like the amount of bandaids in this code, but it passed all tests and I need to move on
 public class Main {
     public static void numberToWords(int number) {
-        // set initial length of number
-        int initNumLength = getDigitCount(number);
-        // reverse number so it prints in the proper order
-        number = reverse(number);
-        // set initial length of reversed number
-        int reversedNumber = number;
-        // check if in range
+        // print Zero if so
+        if (number == 0) {
+            System.out.println("Zero");
+        }
+        // reject negative numbers
         if (number < 0) {
             System.out.println("Invalid Value");
         }
+        // record initial length of number before reversal
+        int initialNumberLength = getDigitCount(number);
+        // reverse number so words are printed in correct order
+        number = reverse(number);
+        // record reversed number length
+        int reversedNumberLength = getDigitCount(number);
+        // record differences between lengths
+        int magnitude = initialNumberLength - reversedNumberLength;
+        // logic to print words for each number
         while (number > 0) {
-            int lastNumber = number % 10;
-            String numWord = "";
-            switch (lastNumber) {
+            // number to convert to word
+            int currentNumber = number % 10;
+            // word to print
+            String wordToPrint = "";
+            switch (currentNumber) {
                 case 0:
-                    numWord = "Zero";
+                    wordToPrint = "Zero";
                     break;
                 case 1:
-                    numWord = "One";
+                    wordToPrint = "One";
                     break;
                 case 2:
-                    numWord = "Two";
+                    wordToPrint = "Two";
                     break;
                 case 3:
-                    numWord = "Three";
+                    wordToPrint = "Three";
                     break;
                 case 4:
-                    numWord = "Four";
+                    wordToPrint = "Four";
                     break;
                 case 5:
-                    numWord = "Five";
+                    wordToPrint = "Five";
                     break;
                 case 6:
-                    numWord = "Six";
+                    wordToPrint = "Six";
                     break;
                 case 7:
-                    numWord = "Seven";
+                    wordToPrint = "Seven";
                     break;
                 case 8:
-                    numWord = "Eight";
+                    wordToPrint = "Eight";
                     break;
                 case 9:
-                    numWord = "Nine";
+                    wordToPrint = "Nine";
                     break;
-
+                default:
+                    break;
             }
-            System.out.println(numWord);
+            // decrease number
             number /= 10;
+            // print word
+            System.out.println(wordToPrint);
         }
-        // if the number has trailing zeros, print them separately
-        if (initNumLength > getDigitCount(number)) {
-//            System.out.println(initNumLength);
-//            System.out.println(getDigitCount(reversedNumber));
-            int difference = initNumLength - getDigitCount(reversedNumber);
-//            System.out.println(difference);
-            while (difference > 0) {
+        // apply missing zeros
+        if (magnitude > 0) {
+            while (magnitude > 0) {
                 System.out.println("Zero");
-                difference--;
+                magnitude--;
             }
         }
     }
-    // there is a bug in here that ignores trailing zeros - it needs to be fixed in the calling method
-    public static int reverse (int number) {
-        // if number is negative, make it positive for the calculation and flip it back later.
+//
+    public static int reverse(int number) {
+        // check if the number is negative, log so, and proceed with calculation *turn back into negative number afterwards
         boolean isNegative = false;
         if (number < 0) {
             isNegative = true;
             number *= -1;
         }
-        int lastNumber;
+        // logic to reverse number
         int reversedNumber = 0;
+        int lastDigit;
         while (number > 0) {
-            lastNumber = number % 10;
+            lastDigit = number % 10;
+//            System.out.println(lastDigit);
+            // if single number, continue
+//            if (getDigitCount(number) == 1) {
+//                reversedNumber = lastDigit;
+//                continue;
+//            }
+            reversedNumber *= 10;
+            reversedNumber += lastDigit;
             number /= 10;
-//            System.out.println(lastNumber);
-//            System.out.println(Math.pow(10, getDigitCount(number)));
-            reversedNumber += (lastNumber * Math.pow(10, getDigitCount(number)));
         }
-        // if number was negative, now it is time to flip it back
+
+        // turn back into negative number
         if (isNegative) {
             reversedNumber *= -1;
         }
-//        System.out.println(reversedNumber);
-        // don't get confused by this
+
         return reversedNumber;
     }
+
     public static int getDigitCount(int number) {
+        // check that number is positive - return -1, otherwise
         if (number < 0) {
             return -1;
         }
+        // check if the input number is 0, then return a 1 to indicate there is a single digit (logic will skip it)
         if (number == 0) {
             return 1;
         }
+        // logic to check how many numbers in number
         int count = 0;
         while (number > 0) {
-            count++;
             number /= 10;
+            count++;
         }
         return count;
     }
 
     public static void main(String[] args) {
-//        test getDigitCount() - all tests passed
+//        test getDigitCount
 //        System.out.println(getDigitCount(0));
 //        System.out.println(getDigitCount(123));
 //        System.out.println(getDigitCount(-12));
 //        System.out.println(getDigitCount(5200));
-//        test numberToWords()
-//        numberToWords(123);
-//        numberToWords(1010);
-//        numberToWords(1000);
-//        numberToWords(-12);
-//        test reverse()
+//        test reverse
 //        System.out.println(reverse(-121));
 //        System.out.println(reverse(1212));
 //        System.out.println(reverse(1234));
 //        System.out.println(reverse(100));
-        System.out.println(reverse(5));
+//        test numberToWords
+//        numberToWords(123);
+//        numberToWords(1010);
+//        numberToWords(1000);
+//        numberToWords(-12);
+        numberToWords(0);
     }
 }
 
-// fix bug
+
