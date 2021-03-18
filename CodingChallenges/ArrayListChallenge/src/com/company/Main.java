@@ -12,9 +12,11 @@ public class Main {
             MobilePhone.printMenu();
             if (scanner.nextInt() == 1) {
                 MobilePhone.addContact();
+//                scanner.nextLine();
             }
             if (scanner.nextInt() == 2) {
                 MobilePhone.printContacts();
+//                scanner.nextLine();
             }
         }
     }
