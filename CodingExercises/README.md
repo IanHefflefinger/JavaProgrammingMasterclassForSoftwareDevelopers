@@ -5,7 +5,7 @@ CodingExercises contains projects that were created to pass unit tests (blind) w
 
 How it works:
 
--Each project starts with a requirements definition around a specific goal(s) for the project.
+-Each project starts with a requirements definition around a specific goal(s) for the project (can be found in each projects README)
 
 -Java code is submitted through the Udemy platform
 
